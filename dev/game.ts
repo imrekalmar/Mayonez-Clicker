@@ -3,6 +3,7 @@ class Game {
     
 
     constructor() {
+        this.screen = new StartScreen(this)
         this.gameLoop()
     }
 

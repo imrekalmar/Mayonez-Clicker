@@ -6,6 +6,7 @@ var EndScreen = (function () {
 }());
 var Game = (function () {
     function Game() {
+        this.screen = new StartScreen(this);
         this.gameLoop();
     }
     Game.prototype.gameLoop = function () {
@@ -117,6 +118,7 @@ var PlayScreen = (function () {
         this.ui.update();
     };
     PlayScreen.prototype.exit = function () {
+        this.game.showPlayScreen();
     };
     return PlayScreen;
 }());
@@ -146,6 +148,7 @@ var UI = (function () {
     }
     UI.prototype.update = function () {
         this.score.innerHTML = this.jar.getScore() + " Mayonez Jars";
+        this.screen.update();
     };
     return UI;
 }());

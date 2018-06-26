@@ -42,20 +42,18 @@ particle{
 }
 
 logo{
-    background-image: url(../images/logo.png);
+    background-image: url(../images/mayonez_logo.png);
     background-size: contain;
-    width: 374px;
-    height: 282px;
+    width: 1920px;
+    height: 1080px;
     cursor: pointer;
-    left: 38vw;
-    top: 35vh;
+    left: 100vw;
+    top: 100vh;
     /* transform-origin: 50% 50%; */
     transition: all 200ms ease-in-out;
 }
 
-logo:hover{
-    transform: scale(1.05, 1.05);
-}
+
 
 i{
     font-size: 30px;
