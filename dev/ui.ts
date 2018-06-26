@@ -12,9 +12,11 @@ class UI {
         this.score.innerHTML = "0 Mayonez Jars"
 
         document.body.appendChild(this.score)
+
     }
 
     update() {
         this.score.innerHTML = this.jar.getScore() + " Mayonez Jars"
+        this.screen.update()
     }
 }

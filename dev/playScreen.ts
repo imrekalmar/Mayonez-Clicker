@@ -26,7 +26,7 @@ class PlayScreen {
     }
 
     public exit() {
-       
+       this.game.showPlayScreen()
     }
 
     
