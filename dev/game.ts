@@ -1,6 +1,6 @@
 class Game {
     private screen:any
-    private gameTime:number = 0
+    
 
     constructor() {
         this.gameLoop()
@@ -13,7 +13,13 @@ class Game {
 
     public showPlayScreen() {
         document.body.innerHTML = ""
-        this.screen = new this.showPlayScreen(this)
+        this.screen = new PlayScreen(this)
+        this.screen.gameTimer()
+    }
+
+    public showEndScreen() {
+        document.body.innerHTML = ""
+        this.screen = new EndScreen()
         this.screen.gameTimer()
     }
 
