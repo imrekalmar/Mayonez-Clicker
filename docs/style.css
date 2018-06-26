@@ -1,0 +1,93 @@
+body{
+    overflow:hidden;
+    margin:0px; padding:0px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-45deg, rgb(255, 60, 0), rgb(231, 60, 60), rgb(255, 0, 34));
+	background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+
+body * {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+jar{
+    background-image: url(../images/mayonez_jar.png);
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    left: 42vw;
+    top: 35vh;
+    transform-origin: 50% 50%;
+    z-index: 10;
+    transition: all 100ms ease-in-out;
+}
+
+particle{
+    background-image: url(../images/mayonez_jar.png);
+    background-size: contain;
+    opacity: 0.2;
+    width: 30px;
+    height: 30px;
+}
+
+logo{
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    width: 374px;
+    height: 282px;
+    cursor: pointer;
+    left: 38vw;
+    top: 35vh;
+    /* transform-origin: 50% 50%; */
+    transition: all 200ms ease-in-out;
+}
+
+logo:hover{
+    transform: scale(1.05, 1.05);
+}
+
+i{
+    font-size: 30px;
+    color: white;
+    animation: studentAnimation 2s ease-in-out infinite alternate;
+}
+
+i.exit{
+    animation: none;
+    font-size: 52px;
+    cursor: pointer;
+}
+
+i.exit:hover{
+    color: #ffffff70;
+}
+
+p{
+    color: #FFFFFF;
+    font-size: 24px
+}
+
+.shop{
+    right: 25px;
+    cursor: pointer;
+    padding: 10px 20px 10px 50px;
+    border: 3px solid #FFFFFF;
+    border-radius: 9px;
+    width: 300px;
+}
+
+.shop i{
+    left: 8px;
+    font-size: 26px;
+}
