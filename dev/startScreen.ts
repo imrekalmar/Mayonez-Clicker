@@ -10,9 +10,9 @@ class StartScreen {
     }
 
     public update(): void {
-
     }
+    
     private nextLevel() {
-        this.game.showPlayScreen
+        this.game.showPlayScreen()
     }
 }

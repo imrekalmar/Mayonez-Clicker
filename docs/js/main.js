@@ -133,7 +133,7 @@ var StartScreen = (function () {
     StartScreen.prototype.update = function () {
     };
     StartScreen.prototype.nextLevel = function () {
-        this.game.showPlayScreen;
+        this.game.showPlayScreen();
     };
     return StartScreen;
 }());
